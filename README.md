@@ -46,3 +46,18 @@ Create a zipWith function that takes two arrays of numbers and a function that w
     zipWith( (a,b) => a+b, [0,1,2,3], [0,1,2,3] )
     //[0,2,4,6]
 
+## sumOfAllArrays
+
+Create a function that will sum all the values in an array and its subarrays 
+
+ #### Examples
+
+    arraySum([1, 2])
+    //3
+    
+    arraySum([1, 2, 3])
+    //6
+    
+    arraySum([1, 2, [1, 2, [3]]])
+    //9
+

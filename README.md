@@ -4,10 +4,10 @@
 
 Traditional safes use a three-wheel locking mechanism, with the safe combination entered using a dial on the door of the safe. The dial is marked with clockwise increments between 0 and 99. The three-number combination is entered by first dialling to the right (clockwise), then to the left (anti-clockwise), and then to the right (clockwise) again. Combination numbers are read from the top of the dial:
 
-
 ![Safe image](https://edabit-challenges.s3.amazonaws.com/image25.png "Safe image")
 
 Given the starting (top) position of the dial and the increments used for each turn of the dial, return an array containing the combination of the safe.
+
 #### Step-By-Step Example
 
     safecracker(0, [3, 10, 5]) ➞ [97, 7, 2]
@@ -32,7 +32,7 @@ Given the starting (top) position of the dial and the increments used for each t
 
 Create a zipWith function that takes two arrays of numbers and a function that will apply to each pair of numbers in the two arrays. The zipWith function should return a new array from the results.
 
- #### Examples
+#### Examples
 
     zipWith( Math.pow, [10,10,10,10], [0,1,2,3] )
     //[1,10,100,1000]
@@ -40,7 +40,7 @@ Create a zipWith function that takes two arrays of numbers and a function that w
     zipWith( Math.max, [1,4,7,1,4,7], [4,7,1,4,7,1] )
     // [4,7,7,4,7,7]
 
-    zipWith( function(a,b) { return a+b; }, [0,1,2,3], [0,1,2,3] ) 
+    zipWith( function(a,b) { return a+b; }, [0,1,2,3], [0,1,2,3] )
     //[0,2,4,6]
 
     zipWith( (a,b) => a+b, [0,1,2,3], [0,1,2,3] )
@@ -48,16 +48,30 @@ Create a zipWith function that takes two arrays of numbers and a function that w
 
 ## sumOfAllArrays
 
-Create a function that will sum all the values in an array and its subarrays 
+Create a function that will sum all the values in an array and its subarrays
 
- #### Examples
+#### Examples
 
     arraySum([1, 2])
     //3
-    
+
     arraySum([1, 2, 3])
     //6
-    
+
     arraySum([1, 2, [1, 2, [3]]])
     //9
 
+## Count the nines
+
+I want to count from 0 to n. How many times will I come across the number 9?
+Numbers like 9, 19, 91 ... add a nine
+Numbers like 99, 199, 919 ... add two nines
+And so on
+
+#### Examples
+
+    countNines (8) // returns 0
+    countNines (9) // returns 1
+    countNines (10) // returns 1
+    countNines (98) // returns 18
+    countNines (100) // returns 20

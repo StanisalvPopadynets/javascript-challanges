@@ -75,3 +75,14 @@ And so on
     countNines (10) // returns 1
     countNines (98) // returns 18
     countNines (100) // returns 20
+
+## Encoude the duplicates
+
+The purpose of this challange is to convert a string to a new one, where every unique character is converted to "(", and every duplicate to ")"
+
+#### Examples
+
+    "din"      =>  "((("
+    "recede"   =>  "()()()"
+    "Success"  =>  ")())())"
+    "(( @"     =>  "))(("

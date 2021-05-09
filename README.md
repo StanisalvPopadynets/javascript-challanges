@@ -86,3 +86,19 @@ The purpose of this challange is to convert a string to a new one, where every u
     "recede"   =>  "()()()"
     "Success"  =>  ")())())"
     "(( @"     =>  "))(("
+
+## Group by type
+
+You are given an array of values with different data types. Write a function that will return an object with sorted values.
+
+#### Examples
+
+    Input value:
+    ['a', 1, 2, false, 'b']
+
+    Output value:
+    {
+        number: [1, 2],
+        string: ['a', 'b'],
+        boolean: [false]
+    }

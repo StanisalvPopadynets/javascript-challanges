@@ -102,3 +102,23 @@ You are given an array of values with different data types. Write a function tha
         string: ['a', 'b'],
         boolean: [false]
     }
+
+## Key extractor
+
+Extract keys from an object and its nested objects into an array
+
+## IP validator
+
+Create a function that validates the IPv4 address.
+
+#### Examples
+
+    Examples of valid addresses:
+    1.2.3.4
+    123.45.67.89
+
+    Examples of invalid addresses:
+    1.2.3
+    1.2.3.4.5
+    123.456.78.90
+    123.045.067.089

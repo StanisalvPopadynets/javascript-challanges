@@ -137,3 +137,13 @@ Create a function that takes an object and returns the keys and values as separa
 
     keysAndValues({ key1: true, key2: false, key3: undefined })
     ➞ [["key1", "key2", "key3"], [true, false, undefined]]
+
+## The most frequently repeated symbol
+
+Create a function that takes a string and returns the most frequently repeated character and the number of times it is repeated
+
+#### Examples
+
+    longestRepetition("aaaabb") => ["a",4]
+    longestRepetition("bbbaaabaaaa") => ["a",4]
+    longestRepetition("cbdeuuu900") => ["u",3]

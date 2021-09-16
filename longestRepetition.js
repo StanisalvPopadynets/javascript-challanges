@@ -10,13 +10,19 @@ const longestRepetition = (inputStr) => {
     }
     if (i === arrFromStr.length - 1) {
       currentCharCount++;
-      if (!mapStore[arrFromStr[i]] || mapStore[arrFromStr[i]] <= currentCharCount) {
+      if (
+        !mapStore[arrFromStr[i]] ||
+        mapStore[arrFromStr[i]] <= currentCharCount
+      ) {
         mapStore[prevChar] = currentCharCount;
       }
       break;
     }
     if (prevChar !== arrFromStr[i]) {
-      if (!mapStore[arrFromStr[i]] || mapStore[arrFromStr[i]] <= currentCharCount) {
+      if (
+        !mapStore[arrFromStr[i]] ||
+        mapStore[arrFromStr[i]] <= currentCharCount
+      ) {
         mapStore[prevChar] = currentCharCount;
       }
       prevChar = arrFromStr[i];
@@ -25,4 +31,7 @@ const longestRepetition = (inputStr) => {
       currentCharCount++;
     }
   }
+  return Object.entries(mapStore).sort(
+    (firstEl, secondEl) => firstEl[1] - secondEl[1]
+  )[Object.keys(mapStore).length - 1];
 };

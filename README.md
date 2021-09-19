@@ -147,3 +147,18 @@ Create a function that takes a string and returns the most frequently repeated c
     longestRepetition("aaaabb") => ["a",4]
     longestRepetition("bbbaaabaaaa") => ["a",4]
     longestRepetition("cbdeuuu900") => ["u",3]
+
+## Unique in order
+
+Create a function that takes a string or array and returns all of the unique elements of the input value in order.
+
+#### Examples
+
+     uniqueInOrder('AAAABBBCCDAABBB')
+    // ['A', 'B', 'C', 'D', 'A', 'B']
+
+    uniqueInOrder('ABBCcAD')
+    //['A', 'B', 'C', 'c', 'A', 'D']
+
+    uniqueInOrder([1,2,2,3,3])
+    //[1,2,3]

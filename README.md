@@ -184,3 +184,24 @@ Be aware that boomerangs can overlap, like so:
     countBoomerangs([5, 6, 6, 7, 6, 3, 9]) ➞ 1
 
     countBoomerangs([4, 4, 4, 9, 9, 9, 9]) ➞ 0
+
+## Separate digits
+
+You are given a string consisting of numbers in English "glued" together. Create a function that will sever the digits.
+
+#### Examples
+
+    "three"
+    // "three"
+
+    "eightsix"
+    // eight six"
+
+    "fivefourseven"
+    // "five four seven"
+
+    "ninethreesixthree"
+    // "nine three six three"
+
+    "fivethreefivesixthreenineonesevenoneeight"
+    // "five three five six three nine one seven one eight"

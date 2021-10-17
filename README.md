@@ -205,3 +205,19 @@ You are given a string consisting of numbers in English "glued" together. Create
 
     "fivethreefivesixthreenineonesevenoneeight"
     // "five three five six three nine one seven one eight"
+
+## Extracting Words with "-ing" Inflection
+
+Write a function that takes a string as an argument and returns a list of all the words inflected by "-ing". Your function should also exclude all the mono-syllabic words ending in "-ing" (e.g. bing, sing, sling, ...). Although these words end in "-ing", the "-ing" is not an inflection affix.
+
+#### Examples
+
+    ingExtractor("coming bringing Letting sing") ➞ ["coming", "bringing", "Letting"]
+
+    ingExtractor("going Ping, king sHrink dOing") ➞ ["going",, "dOing"]
+
+    ingExtractor("zing went ring, ding wing SINk") ➞ []
+
+#### Note
+
+    Mono-syllabic means a word containing just one syllable.

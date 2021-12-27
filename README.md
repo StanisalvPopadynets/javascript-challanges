@@ -221,3 +221,13 @@ Write a function that takes a string as an argument and returns a list of all th
 #### Note
 
     Mono-syllabic means a word containing just one syllable.
+
+## Sum of two lowest positive integers
+
+Create a function that takes an array of numbers and returns the sum of two lowest positive numbers in that array.
+
+#### Examples
+
+    [19, 5, 42, 2, 77] ➞ 7.
+
+    [10, 343445353, 3453445, 3453545353453] ➞ 3453455.

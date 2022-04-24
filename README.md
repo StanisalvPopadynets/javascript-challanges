@@ -231,3 +231,15 @@ Create a function that takes an array of numbers and returns the sum of two lowe
     [19, 5, 42, 2, 77] ➞ 7.
 
     [10, 343445353, 3453445, 3453545353453] ➞ 3453455.
+
+## Object extend
+
+Create a function that takes multiple objects as parameters and returns a new object with all the properties from the input objects.
+
+#### Examples
+
+    extend( {a: 1, b: 2}, {c: 3} ) ➞ {a: 1, b: 2, c: 3}
+
+    extend( {a: 1, b: 2}, {c: 3}, {d: 4} ) ➞ {a: 1, b: 2, c: 3, d: 4}
+
+    extend( {a: 1, b: 2}, {a: 3, c: 3} ) ➞ {a: 1, b: 2, c: 3}
